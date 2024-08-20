@@ -1,0 +1,1751 @@
+@import url('https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+}
+html,
+body {
+  max-width: 100vw;
+  overflow-x: hidden;
+  margin: 0;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  background-color: white;
+  color: white;
+  font-size: 18px;
+}
+
+body p {
+  line-height: 1.8em;
+}
+
+#walletConnect:hover, .who>div:first-of-type a:hover {
+  opacity: 0.9;
+}
+h1 {
+  font-size: 22px;
+  line-height: 1.25em;
+  font-family: "Jost", sans-serif;
+  font-weight: 600;
+  text-align: center;
+  text-transform: uppercase;
+  color: white;
+}
+h2 {
+  font-family: "Jost", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+  text-transform: uppercase;
+  line-height: 1.3em;
+  font-size: 30px;
+  margin: 0 0 30px;
+  text-align: center;
+}
+
+h3 {
+  font-family: "Jost", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-style: normal;
+  font-size: 20px;
+  text-transform: uppercase;
+  margin: 0;
+}
+
+h4 {
+  font-family: "Jost", sans-serif;
+  font-size: 18px;
+}
+
+a {
+  font-family: "Jost", sans-serif;
+  color: white;
+  text-decoration: none;
+  text-transform: uppercase;
+  border: 1px solid white;
+  padding: 10px;
+}
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.headerHome, .headerDash {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #1c1c1c;
+  padding: 5px 10px 5px;
+}
+
+.headerDash {
+  padding: 0 10px 0;
+}
+
+.headerHome>img , .headerDash>a:first-of-type img{
+  width: 100px;
+  margin-top: 5px;
+}
+
+.headerDash>a:first-of-type img {
+  margin-top: 10px;
+}
+.headerDash>a:first-of-type {
+  padding: 0;
+  margin: 0;
+  border: none;
+}
+
+header>a{
+  margin: 0;
+  padding: 5px;
+  background: transparent;
+}
+
+#walletConnect{
+  color: white;
+  border: 2px solid white;
+  background-color: transparent;
+  padding: 10px;
+  font-size: 14px;
+  border-radius: 5px;
+  transition: all .3s ease;
+  text-transform: uppercase;
+}
+/* CARD */
+.card-container {
+  display: flex;
+  flex-direction: column; 
+  align-items: center;
+}
+
+.card {
+  width: 100%;
+  height: 400px;
+  margin: 50px 0 50px;
+  background: linear-gradient(180deg, black 0%, #F2295B00 100%);
+  box-shadow: 0px 0px 30px 0px rgba(0, 0, 0, 0.05);
+  color: white;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.card img {
+  width: 50px;
+  margin-bottom: 20px;
+}
+/* MENU */
+.menu {
+  padding: 5px 0;
+  background: linear-gradient(#1B1C1B, #000000);
+}
+.menu nav a{
+  display: inline-block;
+  text-align: center;
+  flex-direction: row;
+  align-items: center;
+  border: none;
+  width: 33.33%;
+}
+/* HOME */
+.home .presentation {
+  background: linear-gradient(rgba(45,45,45,0.6), rgba(45,45,45,0.6)), url('./assets/images/home/hero.webp');
+  background-size: cover;
+  background-position: center;
+  padding: 120px 5% 150px;
+  text-align: center;
+}
+
+.home h1 span {
+  margin: 40px 0;
+  font-weight: 400;
+  display: block;
+  font-size: 35px;
+}
+
+.home .presentation p {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+}
+
+.home .presentation a {
+  display: block;
+  margin: 40px auto 0;
+  width: fit-content;
+}
+
+.home .about {
+  padding: 100px 5%;
+  background: linear-gradient(#1B1C1B, #000000);
+}
+.home .about h2 {
+  text-align: left;
+}
+.home .join {
+  background: url("./assets/images/home/texture_2.jpg");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  padding: 100px 5% 100px;
+  text-align: center;
+}
+
+.home .join h2, .home .join p {
+  background-color: rgba(0,0,0,0.5);
+  width:fit-content;
+  margin: 0 auto 20px;
+}
+
+.home .join a{
+  display: block;
+  width: fit-content;
+  margin: 50px auto 0;
+}
+.home .join img {
+  width: 30px;
+  vertical-align: middle;
+  margin-top: -1.5px;
+}
+.home .who {
+  background: linear-gradient(#131313, #282828);
+  padding: 100px 5%;
+}
+
+.home .who svg, .home .submit svg, .home .why svg {
+  font-size: 50px;
+  margin-bottom: 20px;
+}
+.home .submit{
+  color: black;
+  text-align: center;
+  padding: 100px 5% 50px;
+}
+
+.home .submit .liste {
+  display: block;
+  background-color: white;
+  margin: 10% auto 10%;
+  padding: 35px 40px;
+  border-radius: 25px;
+}
+
+.home .submit div div {
+  box-shadow: 0px 0px 19px 0px rgba(0, 0, 0, 0.17);
+}
+
+.home .why {
+  background: linear-gradient(180deg, #FFFFFF 0%, #F8F8F8 100%);
+  color: black;
+  padding: 100px 5%;
+}
+.home .why .card {
+  color: black;
+  background: white;
+  box-shadow: 0px 10px 20px 0px rgba(0, 0, 0, 0.07);
+}
+.home .submit .card {
+  background: white;
+  color: black;
+  box-shadow: 0px 10px 20px 0px rgba(0, 0, 0, 0.07);
+}
+
+.home .invest {
+  background: linear-gradient(180deg, #000000 0%, #262626 100%);
+  padding: 100px 0 0;
+}
+.home .invest h2 {
+  margin: 0;
+}
+
+.home .invest p {
+  text-align: center
+}
+.home .invest .card {
+  margin: 0;
+  background: black;
+  height: 200px;
+}
+
+/* DASHBOARD */
+.dashboard, .launchpad, .trends, .form, .project, .infos, .successProject {
+  background: linear-gradient(#131313, #282828);
+}
+.dashboard h1, .launchpad h1, .form h1, .project h1, .infos h1{
+  margin: 30px 0;
+}
+.dashboard .welcome {
+  padding: 20px 5% 50px;
+}
+.dashboard .welcome p:last-of-type{
+  margin-bottom: 0;
+}
+.dashboard .try {
+  padding: 50px 5%;
+  background: linear-gradient(180deg, #FFFFFF 0%, #F8F8F8 100%);
+  color: black;
+}
+.dashboard .try a{
+  display: block;
+  border-color: black;
+  color: black;
+  text-align: center;
+}
+.dashboard .participate {
+  padding-top: 40px;
+}
+.dashboard h2, .launchpad h2, .infos h2 {
+  font-size: 18px;
+  text-align: left;
+  margin-bottom: 20px;
+}
+
+/* LAUNCHPAD */
+.launchpad {
+  position: relative;
+}
+.launchpad .icozone {
+  padding: 20px 5% 0;
+}
+.launchpad .icozone a {
+  display: block;
+  text-align: center;
+}
+.launchpad .icozone .ico {
+  background-color: black;
+  border-radius: 5px;
+  padding: 20px 20px 25px;
+  margin-bottom: 40px;
+  text-align: center;
+}
+
+.launchpad .icozone .ico .ico-container {
+  width: 20%;
+  margin: 0 auto;
+}
+.launchpad .icozone article a:first-of-type {
+  border: none;
+  color: #ae2bf1;
+  padding: 0;
+}
+
+.launchpad .icozone ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0 0 20px;
+}
+
+.launchpad .icozone>div {
+  padding: 0 0 50px;
+}
+.launchpad h2 {
+  margin-bottom: 20px;
+  text-align: center;
+}
+.launchpad h3 {
+  margin: 10px 0;
+  font-size: 16px;
+  text-transform: uppercase;
+}
+
+/* PROJECT */
+
+.project {
+  margin: 0;
+}
+
+.project section {
+  text-align: center;
+  padding: 20px 5%;
+}
+
+.project section .description h2 {
+  font-size: 18px;
+  margin-bottom: 0;
+}
+.project section .description #pdf {
+  background-color: transparent;
+  border: 1px solid white;
+  color: white;
+  text-transform: uppercase;
+  padding: 10px;
+  margin: 20px 0;
+  font-size: 20px;
+}
+
+.progress-bg {
+    margin: 20px auto;
+    width: 100%;
+    height: 60px;
+    border-radius: 5px;
+    box-shadow: inset 0 0 10px #ccc;
+    position: relative;
+  }
+  
+  .progress-bar {
+    height: 60px;
+    border-radius: 5px;
+    background-color: #ae2bf1; 
+    transition: width 0.5s ease-in-out;
+    position: relative;
+  }
+  
+  .progress-bg h3.goal, .progress-bg h3.raised {
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 60px;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    top: 0;
+    display: inline-block;
+    white-space: nowrap;
+  }
+  
+  .progress-bg h3.raised {
+    color: #fff;
+    left: 10px;
+  }
+  
+  .progress-bg h3.goal {
+    color: #b2b2b2;
+    right: 10px;
+  }
+  
+  body .progress-bg h3.raised {
+    animation: fadein 4s;
+  }
+  
+  @keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+  }
+  
+.project .hashscan {
+  margin-top: 10px;
+}
+.project section table {
+  border-collapse: collapse;
+  width: 100%;
+  margin-top: 30px;
+}
+.project section table td{
+  border: 0.5px solid white;
+  padding: 10px;
+}
+.project section table td:first-of-type{
+   text-align: left;
+}
+.project section table td a, .project .projectInfos2 a {
+  border: none;
+  padding: inherit;
+  color: #ae2bf1;
+  text-transform: lowercase;
+  font-size: 20px;
+}
+
+.project section ul{
+  list-style-type: none;
+  padding: 0;
+}
+.project section ul li{
+  margin: 10px 0;
+}
+.project img {
+  display: block;
+  width: 50%;
+  margin: 40px auto;
+}
+.project .formPart p {
+  margin: 20px 0;
+}
+.project form input, .popup form input {
+  padding: 20px;
+  border-radius: 5px 0 0 5px;
+  border: 1px solid white;
+}
+.project form button, .popup form button  {
+  padding: 20px;
+  border-bottom-right-radius: 5px;
+  border-top-right-radius: 5px;
+}
+.project form button {
+  background: linear-gradient(to right,#8a54ec, #ae2bf1, #8a54ec);
+  color: white;
+  border: 1px solid #8a54ec;
+}
+.project .projectInfos2 {
+  margin-top: 30px;
+}
+.project .projectInfos2 article{
+  text-align: left;
+  background-color: black;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+.project .projectInfos2 article h3{
+  margin-top: 0;
+}
+.project .projectInfos2 article p{
+  margin: 10px 0;
+}
+/* POPUP */
+.popup, .popupConnect {
+  position: fixed;
+  left: 5%;
+  right: 5%;
+  top: 35vh;
+  background: linear-gradient(180deg, #FFFFFF 0%, #F8F8F8 100%);
+  z-index: 2;
+  border-radius: 5px;
+  color: black;
+  padding: 50px 20px;
+  text-align: center;
+}
+.popup form input {
+  border: 1px solid black;
+  color: black;
+  margin: 0;
+}
+.popup form input::placeholder {
+  color: black;
+}
+.popup form button, .popupConnect button {
+  background: linear-gradient(to right,#8a54ec, #ae2bf1, #8a54ec);
+  color: white;
+  border: 1px solid #8a54ec;
+}
+.popup a {
+  display: block;
+  color: black;
+  border-color: black;
+  text-align: center;
+  width: 30%;
+  margin: 0 auto;
+}
+.popupConnect #walletConnect {
+  padding: 13.5px;
+}
+.popupConnect p {
+  width: 100%;
+}
+
+.popupConnect a{
+  color: black;
+  border: 1px solid black;
+  text-align: center;
+  border-radius: 5px;
+  margin-left: 20px;
+  font-size: 14px;
+}
+/* TRENDS */
+
+.trends .fungible {
+  padding-top: 20px;
+}
+.trends h1 {
+  padding: 30px 0;
+  margin: 0;
+}
+.trends .loading {
+  text-align: center;
+  margin: 20vh auto;
+}
+.trends .fungible ul{
+  list-style-type: none;
+  padding: 0 5% 10%;
+  margin: 0;
+}
+.trends .fungible ul li a{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-bottom: 20px;
+  border-radius: 5px;
+}
+
+.trends .fungible ul li a>div{
+  font-size: 12px;
+  line-height: 20px;
+  width: 70%;
+}
+
+.trends .fungible ul li a>img{
+  width: 25%;
+}
+
+/* FORM */
+.form {
+  min-height: 70vh;
+}
+.form h1 {
+  margin: 0;
+  padding: 30px 0;
+}
+.form .formNav {
+  width: 90%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-bottom: 20px;
+}
+.form .formNav a {
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+.form .formNav a:nth-of-type(odd){
+  margin-right: 10px;
+}
+.form form, .project form, .popup form {
+  display: flex;
+  flex-direction: column;
+  padding: 0 5% 5%;
+}
+.form form {
+  padding-top: 20px;
+}
+.form label {
+  margin-bottom: 10px;
+}
+.form input, .form textarea {
+  padding: 20px;
+  border-radius: 5px;
+  border: none;
+  margin-bottom: 20px;
+}
+.form textarea {
+  min-height: 75px;
+}
+.form p {
+  margin: 0 0 10px;
+}
+.custom-file-upload {
+  position: relative;
+  display: inline-block;
+}
+
+.custom-file-upload input[type="file"] {
+  display: none;
+}
+
+.custom-file-upload label {
+  display: inline-block;
+  padding: 10px 20px;
+  cursor: pointer;
+  background-color: #8a54ec;
+  color: white;
+  border-radius: 5px;
+  border: 1px solid #8a54ec;
+  transition: background-color 0.3s, border-color 0.3s;
+}
+
+.custom-file-upload label:hover {
+  opacity: 0.9;
+}
+
+#file-input {
+  display: none;
+}
+.form form .valid {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.form form input[type=submit] {
+  text-transform: uppercase;
+  background-color: transparent;
+  border: 1px solid white;
+  color: white;
+  margin: 0;
+  width: 150px;
+}
+.form form div .hidden {
+  visibility: hidden;
+}
+
+
+.form select {
+  font-size: 18px;
+  background-color: transparent;
+  color: white;
+  border: 1px solid white;
+  padding: 10px;
+}
+
+.form .active {
+  color: #ae2bf1;
+  border: 1px solid #ae2bf1;
+}
+
+.form #team-members{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.form #team-members input {
+  width: 49%;
+}
+.form #team-members input:nth-of-type(n+3){
+  width: 100%;
+}
+
+.form #partnersInfos input{
+  display: block;
+  margin-top: 10px;
+  width: 100%;
+}
+.form #gitLink, .form #companyLink, .form #minMax input{
+  width: 100%;
+  margin-top: 10px;
+}
+
+.form  #regulations, .form #legalAdvice, .form #community, .form #roadMap, .form #business, .form #launched{
+  margin-bottom: 20px;
+}
+
+.form #channels {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  width: 100%;
+}
+.form #channels label {
+  width: 33%;
+  text-align: center;
+}
+
+.form #sendPdf {
+  font-size: 20px;
+  padding: 20px 0;
+}
+
+.form .error {
+  color: red;
+  text-align: center;
+}
+
+.form .validation .error {
+  text-align: left;
+}
+/* SUCCESSPROJECT */
+.successProject{
+  padding: 25vh 5%;
+  text-align: center;
+  min-height: 75vh;
+}
+
+.successProject a {
+  display: block;
+}
+/* INFORMATIONS */
+.infos {
+  padding: 20px 5%;
+}
+
+.infos h1 {
+  text-align: left;
+}
+
+.infos article {
+  padding: 20px 0;
+}
+.infos article h3 {
+  text-transform: inherit;
+  margin-bottom: 10px;
+}
+.infos a {
+  display: block;
+  text-align: center;
+  margin-bottom: 5%;
+}
+/* FOOTER */
+footer {
+  background: white;
+  background-size: cover;
+  padding: 5%;
+  text-align: center;
+  color: black;
+  text-transform: uppercase;
+}
+
+footer>p {
+  font-family: "Jost", sans-serif;
+  font-weight: 400;
+  font-size: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+footer div a {
+  margin-top: 0;
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  border: 1px solid white;
+  border-radius: 50%;
+}
+
+@media screen and (min-width: 768px){
+  .headerDash {
+      padding: 1% 5%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+  }
+
+  .headerHome {
+    padding: 15px 50px 15px;
+  }
+
+  #walletConnect{
+    font-size: 20px;
+    background: linear-gradient(to right,#8a54ec, #ae2bf1, #8a54ec);
+    border: none;
+  }
+  
+  .home .join h2, .home .who h2, .home .submit h2, .home .invest h2 {
+    margin-bottom: 50px;
+  }
+  /* HOME */
+  .home .about {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+
+  .home .about h2 {
+    width: 100%;
+  }
+  .home .about>div {
+    width: 58%;
+  }
+  .home .about #graph {
+    width: 40%;
+  }
+
+  .home .who .card-container, .home .why .card-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+
+  .home .who .card-container .card, .home .why .card {
+    width: 48%;
+    height: 350px;
+    margin-bottom: 10px;
+  }
+
+  .home .submit {
+    padding: 100px 0 0;
+  }
+  .home .submit>div{
+      background-image: url("./assets/images/home/black_bg_3.jpg");
+      background-size: 50%;
+      background-repeat: no-repeat;
+      background-position: left;
+      padding-right: 5%;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
+      align-items: flex-end;
+      flex-wrap: wrap;
+  }
+  .home .submit .liste {
+    width: calc(50% + 40px);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: none;
+    background-color: transparent;
+    margin:0;
+  }
+
+  .home .submit div svg {
+    width: 10%;
+    padding: 10px;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: white;
+    box-shadow: 0px 0px 19px 0px rgba(0, 0, 0, 0.17);
+    margin: 0;
+  }
+
+  .home .submit div h3 {
+    width: 80%;
+    text-align: left;
+  }
+  .home .invest {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 0 0 0 5%;
+  }
+
+  .home .invest div, .home .invest .card-container  {
+    width: 50%;
+  }
+  .home .invest .title-container {
+    position: relative;
+    height: 100%;
+  }
+  
+  .home .invest .title-container h2 {
+    position: absolute;
+    top: 46%;
+    transform: translateY(30vh);
+    text-align: left;
+    width: 100%;
+    padding: 0;
+  }
+  
+  .home .invest p {
+    position: absolute;
+    top: 55%;
+    text-align: left;
+    transform: translateY(35vh);
+  }
+  .home .invest .card {
+    width: 100%;
+  }
+
+  /* DASHBOARD */
+  .dashboard .try {
+    display: flex;
+    justify-content: space-between;
+    padding: 0;
+  }
+  .dashboard .try article {
+    width: 50%;
+    padding: 50px 5%;
+    border: 0.5px solid black;
+  }
+  .dashboard .join {
+    padding: 0 2% 0 0;
+  }
+  .dashboard .participate {
+    padding: 0 0 0 2%;
+  }
+  .launchpad .icozone {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  .launchpad .icozone h1 {
+    width: 100%;
+  }
+  .launchpad .icozone article {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 100%;
+  }
+  
+  .launchpad .icozone .ico{
+    width: 49%;
+  }
+
+  .launchpad .icozone>div {
+    position: relative;
+    width: 48%;
+    margin-bottom: 50px;
+  }
+
+  .launchpad .icozone>div a {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+  }
+
+  /* PROJECT */
+ 
+  .project {
+    min-height: 75vh;
+  }
+
+  .project section img {
+    width: 30%;
+  }
+
+  /* TRENDS */
+
+  .trends .fungible ul li a>div{
+    width: 85%;
+  }
+
+  /* FORM */
+  .form form {
+    padding: 0 10% 5%;
+  }
+
+  .form form .valid {
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  .form form .valid input[type=submit]:last-of-type{
+    margin-left: 20px;
+  }
+  /* SUCCESSPROJECT */
+  .successProject a {
+    width: fit-content;
+    margin: 20px auto;
+  }
+  /* POPUP */
+  .popup, .popupConnect {
+    width: 60%;
+    margin: 0 auto;
+  }
+
+  .popupConnect #walletConnect {
+    font-size: 14px;
+  }
+
+  footer {
+    padding: 5%;
+  }
+
+  footer p {
+    margin-bottom: 0;
+  }
+}
+
+@media screen and (min-width: 1024px){
+  .headerHome, .headerDash {
+    height: 10vh;
+    padding: 3% 10%;
+  }
+  .headerHome>img {
+    margin-top: 0;
+  }
+  /* Header container */
+.headerDash {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: transparent;
+  transition: background-color 0.3s ease;
+  height: 10vh;
+  z-index: 1000;
+}
+
+.headerDash > a:first-of-type img {
+  margin-top: 12px;
+}
+
+.headerDash > div {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 20px;
+}
+
+
+.headerDash > div nav a {
+  margin-right: 10px;
+  border: none;
+  color: white; 
+  text-decoration: none;
+}
+
+.headerDash > div nav a.active {
+  border-bottom: 2px solid white;
+}
+
+.headerHome {
+  background-color: #1B1C1B;
+}
+
+.home h1 {
+  text-align: left;
+  font-size: 28px;
+}
+
+  .home h1 span{
+    font-size: 48px;
+  }
+  .home .presentation{
+    height: 90vh;
+    text-align: left;
+    padding: 25vh 10% 0;
+  }
+  .home .presentation a {
+    margin: 40px 0;
+  }
+
+  .home .presentation p {
+    width: 30%;
+  }
+  .home .about,.home .join, .home .who, .home .why {
+    padding: 100px 10%;
+    min-height: 100vh;
+  }
+
+  .home .submit h2, .home .submit .why h2, .home .invest h2 {
+    margin-bottom: 0;
+  }
+
+  .home .about div {
+    width: 40%;
+  }
+
+  .home .about #graph {
+    width: 54%;
+  }
+
+  .home .join {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+ .home .join p {
+  width: 50%;
+ }
+  
+ .home .who, .home .why {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+ }
+
+ .home .who {
+  padding: 0 10%;
+  clear: both;
+ }
+ 
+ .home .who>div:nth-of-type(1), .home .why>div:nth-of-type(1) {
+    width: 50%;
+    padding: 0 5% 0 0;
+ }
+ .home .who h2, .home .why h2 {
+  text-align: left;
+  margin: 0;
+ }
+ .home .who .card-container, .home .why .card-container {
+  width: 50%;
+  padding: 0;
+  padding: 100px 0;
+ }
+ .home .who .card-container .card, .home .why .card-container .card{
+  width: 46%;
+  height: 250px;
+  margin: 0 0 8%;
+ }
+ .home .who .card-container .card h3, .home .why .card-container .card h3 {
+  font-size: 12px;
+  padding: 2%;
+}
+ .home .who .card-container .card:nth-of-type(even){
+  position: relative;
+  top: 50px;
+ }
+
+.home .submit {
+  padding: 0 0 0 10%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.home .submit h2{
+  width: 28%;
+  text-align: left;
+}
+.home .submit div{
+  width: 70%;
+}
+
+.home .why .card-container{
+  padding: 0;
+}
+.home .why .card-container .card{
+  margin: 0 0 5% 0;
+}
+
+.home .why .card-container .card:nth-of-type(3), .home .why .card-container .card:nth-of-type(4) {
+  margin: 0;
+}
+.home .invest {
+  height: 60vh;
+  padding-left: 10%;
+}
+
+.home .invest .title-container h2 {
+  transform: translateY(0);
+}
+
+.home .invest p {
+  transform: translateY(0);
+}
+
+.home .invest .card-container{
+  background: url("./assets/images/home/pexels-photo-7531987-7531987.webp");
+  background-position: center;
+  background-size: cover;
+  flex-direction: row;
+  align-items: flex-end;
+}
+.home .invest .card-container .card{
+  width: 33.33%;
+  background-color: rgba(0,0,0,0.7);
+  height: 20vh;
+}
+
+.home .invest .card img {
+  width: 30px;
+  margin-bottom: 0;
+}
+.home .invest .card h3 {
+  font-size: 12px;
+}
+/* DASHBOARD */
+.dashboard {
+  background: url("./assets/images/home/moon.png") no-repeat;
+  background-size: cover;
+  background-position: center;
+  padding-top: 10vh;
+  min-height: 92vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  font-size: 14px;
+}
+.dashboard h1 {
+  text-align: left;
+}
+.dashboard .welcome {
+  width: 50%;
+  padding-right: 0;
+}
+.dashboard .try {
+  width: 48%;
+  background: transparent;
+  margin-top: 12vh;
+  display: flex;
+  justify-content: space-between;
+  padding-right: 5%;
+}
+
+.dashboard .try article {
+  position: relative;
+  width: 48%;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.dashboard .try h2 {
+  font-size: 16px;
+  margin-bottom: 0;
+}
+
+.dashboard .try .join, .dashboard .participate {
+  border-radius: 5px;
+  background: linear-gradient(180deg, #FFFFFF 0%, #F8F8F8 100%);
+}
+
+.dashboard .try .join p, .dashboard .participate p{
+  min-height: 250px;
+}
+
+.dashboard .try a {
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  align-self: flex-start;
+}
+.dashboard #slogan {
+  font-family: "Jost", sans-serif;
+  color: white;
+  font-size: 60px;
+  text-align: center;
+  width: 100%;
+  margin: 0;
+}
+/* LAUNCHPAD */
+.launchpad {
+  background: url("./assets/images/home/space.jpg") no-repeat;
+  background-size: cover;
+  background-position: center;
+  font-size: 14px;
+  padding-top: 12vh;
+  min-height: 92vh;
+  z-index: 0;
+}
+
+.launchpad .icozone {
+  padding-top: 0;
+}
+
+.launchpad .icozone article {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  gap: 2%;
+}
+
+.launchpad .icozone .ico {
+  background-color: #131313;
+  width: 24%;
+  height: auto;
+  padding: 20px;
+  font-size: 10px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.launchpad .icozone .ico:nth-child(4n+2),
+.launchpad .icozone .ico:nth-child(4n+3) {
+  margin-left: 0;
+  margin-right: 0;
+}
+
+.launchpad .icozone .ico h2 {
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+.launchpad .icozone .ico h3 {
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+
+.launchpad .icozone .ico-container {
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.launchpad .icozone .ico img {
+  max-width: 100%;
+  height: auto;
+}
+
+.launchpad .icozone .ico p {
+  margin-bottom: 10px;
+}
+
+.launchpad .icozone .ico ul {
+  margin-bottom: 20px;
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.launchpad .icozone .ico a:first-of-type {
+  font-size: 16px;
+  text-align: center;
+  margin-bottom: 10px;
+  display: block;
+}
+
+.launchpad .icozone .ico a:last-of-type {
+  margin-top: auto;
+  font-size: 16px;
+  text-align: center;
+  padding: 10px;
+  background-color: #262626;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  display: block; 
+}
+
+/* PROJECT */
+.project {
+  background: url("./assets/images/home/space.jpg") no-repeat;
+  background-size: cover;
+  background-position: center;
+  padding-top: 10vh;
+  padding-bottom: 10vh;
+  min-height: 92vh;
+}
+.project section {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.project section #logoTitle {
+  display: flex;
+  align-items: center;
+}
+
+.project section #logoTitle h1{
+  text-align: left;
+  margin-left: 20px
+}
+.project section .description {
+  width: 45%;
+  text-align: left;
+}
+
+.project section .description p:first-of-type {
+  margin-top: 0;
+}
+
+.project section h2 {
+  text-align: left;
+}
+.project section .hashscan {
+  width: 50%;
+}
+.project section img {
+  width: 10%;
+  margin: 0;
+}
+
+.project form {
+  padding-left: 0;
+}
+.project .projectInfos2{
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.project .projectInfos2 article{
+  background-color: #131313;
+  width: 49%;
+}
+
+.project .projectInfos2 h2{
+  width: 100%;
+}
+/* TRENDS */
+.trends, .details {
+  background: url("./assets/images/home/space.jpg") no-repeat;
+  background-size: cover;
+  background-position: center;
+  padding-top: 10vh;
+  height: 92vh;
+  overflow: auto;
+}
+.trends .fungible h1 {
+  text-align: left;
+  padding-left: 5%;
+}
+.trends .fungible ul{
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+.trends .fungible ul li{
+  flex: 1 0 calc(33.3333% - 4%);
+  width: 32%;
+  margin-left: 2%;
+  margin-right: 2%;
+}
+
+.trends .fungible ul li:nth-child(3n+2) {
+  margin-left: 2%;
+  margin-right: 2%;
+}
+
+.trends .fungible ul li:nth-child(3n+1),
+.trends .fungible ul li:nth-child(3n) {
+  margin-left: 0;
+  margin-right: 0;
+}
+
+.trends .fungible ul li a {
+  background-color: #131313;
+  border: none;
+}
+.trends .fungible ul li a>div{
+  width: 75%;
+}
+.trends .fungible ul li a>img{
+  width: 25%;
+}
+
+/* FORM */
+.form {
+  background: url("./assets/images/home/space.jpg") no-repeat;
+  background-size: cover;
+  background-position: center;
+  padding-top: 10vh;
+  min-height: 92vh;
+  overflow: auto;
+  position: relative;
+}
+.form h1 {
+  padding-bottom: 20px;
+}
+
+.form .formNav {
+  width: 100%;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.form .formNav a {
+  flex: 1 1 calc(16.66% - 20px);
+  margin: 5px 10px;
+  border-radius: 2px;
+  font-size: 8px;
+  padding: 5px;
+  text-align: center;
+  text-decoration: none;
+}
+
+
+
+.form form {
+  padding: 5px 20% 20px;
+}
+
+.form input, .form textarea {
+  padding: 10px;
+  border-radius: 2px;
+}
+.form select {
+  font-size: 14px;
+}
+.form input[type=submit]{
+  padding: 10px 20px;
+}
+
+.form label {
+  font-size: 14px;
+}
+
+.form #channels {
+  justify-content: flex-start;
+}
+.form #channels label {
+  width: 15%;
+  text-align: left;
+}
+/* SUCCESSPROJECT */
+.successProject {
+  background: url("./assets/images/home/space.jpg") no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 92vh;
+}
+/* INFORMATIONS */
+.infos {
+  background: url("./assets/images/home/space.jpg") no-repeat;
+  background-size: cover;
+  background-position: center;
+  padding-top: 12vh;
+  min-height: 92vh;
+}
+.infos>div {
+  overflow: auto;
+  padding-bottom: 100px;
+}
+.infos .lifecycle>div img {
+  padding: 0 0 20px 0;
+}
+
+.infos a {
+  width: fit-content;
+  margin-bottom: 40px;
+}
+/* POPUP */
+.popup, .popupConnect {
+  width: 35%;
+}
+
+
+
+/* FOOTER */
+
+footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2.5px 5% 0;
+  height: 8vh;
+}
+
+.other {
+  background-color: #131313;
+  color: white;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 3;
+}
+
+  footer>p {
+    flex-direction: row;
+    align-items: center;
+    margin: 5px 0;
+    font-size: 10px;
+  }
+
+  footer div a {
+    border: none;
+    border-radius: inherit;
+    width: 30px;
+    height: 30px;
+    padding: 0;
+    margin: 0 20px 0 0;
+  }
+}
+@media screen and (min-width: 1300px){
+  .headerDash {
+    padding: 0 5%;
+  }
+
+  .dashboard .try .join p, .dashboard .participate p{
+    min-height: 200px;
+  }
+
+  .form .formNav {
+    
+    width: 90%;
+    padding: 0;
+  }
+
+  .form .formNav a{
+    font-size: 10px;
+  }
+  
+}
+@media screen and (min-width: 1400px) {
+  .home .submit .liste {
+    width: calc(50% + 30px);
+  }
+
+  .dashboard .try .join p, .dashboard .participate p{
+    min-height: 190px;
+  }
+  /* POPUP */
+  .popup {
+    width: 25%;
+  }
+  .form .formNav {
+    width: 80%;
+    padding: 0;
+  }
+}
+@media screen and (min-width: 1500px){
+  .home .invest .card-container .card{
+    height: 15vh;
+  }
+
+  .dashboard .try .join p, .dashboard .participate p{
+    min-height: 180px;
+  }
+
+  .form form {
+    padding: 5px 25% 20px;
+  }
+  .trends .fungible ul li a>img{
+    width: 20%;
+  }
+  .form .formNav {
+    width: 75%;
+    padding: 0;
+  }
+}
+
+@media screen and (min-width: 1800px){
+
+  .headerHome, .headerDash {
+    padding: 2% 10%;
+  }
+
+  .home .join p {
+    width: 30%;
+  }
+
+  .home .who .card-container .card, .home .why .card-container .card{
+    height: 300px;
+  }
+
+  .home .submit .liste {
+    width: calc(50% + 25px);
+  }
+
+  .home .invest .card-container .card{
+    height: 10vh;
+  }
+
+  .dashboard .welcome {
+    padding-left: 20%;
+  }
+  .dashboard .try {
+    padding-right: 20%; 
+  }
+  .launchpad .icozone, .project section {
+    padding: 0 20%;
+  }
+  .trends .fungible h1 {
+    padding-left: 20%;
+  }
+  .trends .fungible ul{
+    padding: 0 20% 3%;
+  }
+  .infos {
+    padding: 12vh 20%;
+  }
+  /* POPUP */
+  .popup {
+    width: 20%;
+  }
+  .form .formNav {
+    width: 60%;
+    padding: 0;
+  }
+}
+
+@media screen and (min-width: 2200px){
+  .headerHome, .headerDash {
+    padding: 1% 10%;
+  }
+  .home .submit .liste {
+    width: calc(50% + 15px);
+  }
+ 
+  /* POPUP */
+  .popup {
+    width: 18%;
+  }
+  .form .formNav {
+    width: 50%;
+    padding: 0;
+  }
+}
+
+@media screen and (min-width: 2400px){
+  .home .submit .liste {
+    width: calc(50% + 10px);
+  }
+
+  /* POPUP */
+  .popup {
+    width: 15%;
+  }
+  .form .formNav {
+    width: 40%;
+    padding: 0;
+  }
+}
