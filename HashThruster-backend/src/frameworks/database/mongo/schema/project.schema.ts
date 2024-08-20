@@ -1,0 +1,61 @@
+import mongoose from 'mongoose';
+
+const teamMemberSchema = new mongoose.Schema({
+  name: { type: String, required: false },
+  position: { type: String, required: false },
+  linkedin: { type: String, required: false },
+});
+
+const projectSchema = new mongoose.Schema({
+  creation_date: { type: Date, required: true },
+  projectName: { type: String, required: true },
+  tokenName: { type: String, required: true },
+  tokenSymbol: { type: String, required: true },
+  projectWebsite: { type: String, required: false },
+  projectDescription: { type: String, required: true },
+  teamMemberCount: { type: Number, required: true },
+  teamMembers: { type: [teamMemberSchema], required: true },
+  hasPartners: { type: Boolean, required: true },
+  partnerCount: { type: Number, required: true },
+  mainPartner: { type: String, required: false },
+  partnerRole: { type: String, required: false },
+  technologies: { type: [String], required: true },
+  isOpenSource: { type: Boolean, required: true },
+  repositoryLink: { type: String, required: false },
+  isAudited: { type: Boolean, required: true },
+  auditCompany: { type: String, required: false },
+  tokenPurpose: { type: String, required: true },
+  tokenSupply: { type: String, required: true },
+  tokenDistribution: { type: String, required: true },
+  tokenStandard: { type: String, required: true },
+  hashscanLink: {type: String, required: false},
+  businessModel: { type: String, required: true },
+  revenueGeneration: { type: String, required: true },
+  tokenUseCases: { type: String, required: true },
+  hasRoadMap: { type: Boolean, required: true },
+  roadMapLink: { type: String, required: false },
+  registeredCountry: { type: String, required: true },
+  compliesWithRegulations: { type: Boolean, required: true },
+  obtainedLegalAdvice: { type: Boolean, required: true },
+  marketingStrategy: { type: String, required: true },
+  communicationChannels: { type: [String], required: true },
+  communityMembers: { type: String, required: true },
+  risks: { type: String, required: true },
+  challenges: { type: String, required: true },
+  fundraisingTarget: { type: String, required: true },
+  minInvestment: { type: String, required: false },
+  maxInvestment: { type: String, required: false },
+  tokenValue: { type: String, required: true },
+  successReason: { type: String, required: true },
+  differentiation: { type: String, required: true },
+  launchDate: { type: String, required: false },
+  hasLaunched: { type: Boolean, required: true },
+  projectLaunchDate: { type: String, required: false },
+  pdfFileName: { type: String, required: false },
+  projectEmail: { type: String, required: true},
+  status: { type: String, required: true, enum: ['pending', 'approved', 'rejected', 'listed'] },
+});
+
+const ProjectModel = mongoose.model('Project', projectSchema);
+
+export default ProjectModel;
