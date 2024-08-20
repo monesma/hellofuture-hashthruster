@@ -1,0 +1,881 @@
+@import url('https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+h1, h2, h3 {
+  font-family: "Jost", sans-serif;
+  text-transform: uppercase;
+}
+
+h1 {
+  margin: 22px;
+  text-align: center;
+}
+
+h2 {
+  font-size: 20px;
+}
+
+a, button{
+  text-decoration: none;
+  text-transform: uppercase;
+  color: white;
+  border: 1px solid white;
+  border-radius: 5px;
+  padding: 10px;
+}
+
+.nothing {
+  text-align: center;
+  margin: 0 auto;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  font-size: 18px;
+  background: linear-gradient(#131313, #282828);
+  background-position: center;
+  background-size: cover;
+  color: white;
+  min-height: 100vh;
+  line-height: 24px;
+}
+
+header {
+  background-color: #1c1c1c;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 25px 20px 20px;
+}
+
+header a img {
+  width: 100px;
+}
+
+header>a:first-of-type {
+  border: none;
+  margin: 0;
+}
+
+header nav a {
+  font-size: 18px;
+}
+
+header nav a:first-of-type, header nav a:nth-of-type(2) {
+  margin-right: 10px;
+}
+/* LOGIN */
+.login {
+  text-align: center;
+  margin-top: 20vh;
+}
+.login form {
+  width: 90%;
+  margin: 0 auto;
+}
+.login form input{
+  display: block;
+  width: 100%;
+  padding: 10px;
+  border-radius: 5px;
+  margin-bottom: 20px;
+  font-size: 18px;
+}
+
+.login form button, .createWallet button, .profile .form input[type=submit]{
+  background: linear-gradient(to right,#8a54ec, #ae2bf1, #8a54ec);
+  color: white;
+  border: 1px solid #8a54ec;
+  margin-top: 5px;
+}
+
+/* PROFILE */
+.profile {
+  text-align: center;
+  width: 90%;
+  margin: 5vh auto 0;
+}
+.profile h2 {
+  margin: 20px auto 20px;
+}
+
+.profile h2:last-of-type {
+  margin: 40px auto 20px;
+}
+.profile p {
+  margin: 10px 0;
+}
+.profile .form {
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+}
+
+.profile .form select {
+  margin-bottom: 50px;
+}
+
+.profile .adminCard {
+  background-color: #131313;
+  padding: 20px 20px 40px;
+  margin: 20px;
+  border-radius: 5px;
+}
+
+.profile .adminCard p {
+  margin: 20px 0;
+}
+
+/* HOME */
+.home {
+  text-align: center;
+  margin-top: 5vh;
+}
+
+.home h2 {
+  margin-bottom: 3vh;
+  text-align: center;
+}
+.home h3 {
+  margin: 10px 0;
+  font-size: 16px;
+  text-transform: uppercase;
+}
+
+.home nav {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin: 5vh 5% 0;
+}
+.home nav a {
+  width: 48%;
+  margin: 0;
+}
+
+.home nav a:first-of-type, .home nav a:nth-of-type(2) {
+  margin-bottom: 10px;
+}
+
+.home .active {
+  border: 1px solid #8a54ec;
+  color: #8a54ec;
+}
+.home .list {
+  padding: 5vh 5%;
+}
+.home .list a {
+  display: block;
+  text-align: center;
+}
+.home .list .info {
+  background-color: black;
+  border-radius: 5px;
+  padding: 20px 20px 25px;
+  margin-bottom: 40px;
+  text-align: center;
+}
+
+.home .list .info .info-container {
+  width: 20%;
+  margin: 0 auto 20px;
+}
+.home .list .info #website {
+  border: none;
+  color: #ae2bf1;
+  padding: 0;
+  margin: 0 0 20px;
+}
+.home .list .info a:last-of-type {
+  margin-top: 20px;
+}
+.home .info ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0 0 20px;
+}
+
+.home .list>div {
+  padding: 0 0 50px;
+}
+.home .list .no-project {
+  text-align: center;
+  margin: 5vh 0;
+}
+
+/* PROJECT DETAIL AND TOKEN DETAIL*/
+.projectDetail>div {
+  text-align: center;
+  padding: 0 5% 20px;
+}
+
+.projectDetail>div h2 {
+  font-size: 20px;
+  margin: 20px 0;
+}
+
+.projectDetail>div h3 {
+  font-size: 16px;
+  margin: 10px 0;
+}
+
+.projectDetail>div .description #pdf {
+  background-color: transparent;
+  border: 1px solid white;
+  color: white;
+  text-transform: uppercase;
+  padding: 10px;
+}
+.projectDetail>div table {
+  border-collapse: collapse;
+  width: 100%;
+  margin-top: 30px;
+}
+.projectDetail>div table td{
+  border: 0.5px solid white;
+  padding: 10px;
+}
+.projectDetail>div table td:first-of-type{
+   text-align: left;
+}
+.projectDetail a {
+  border: none;
+  text-transform: lowercase;
+  padding: inherit;
+  color: #ae2bf1;
+}
+
+.projectDetail>div ul{
+  list-style-type: none;
+  padding: 0;
+}
+.projectDetail>div ul li{
+  margin-bottom: 5px;
+}
+.projectDetail>div img {
+  display: block;
+  width: 50%;
+  margin: 40px auto;
+}
+
+.projectDetail>div button, .distribute input[type=submit],  #pdf {
+  padding: 20px;
+  background: linear-gradient(to right,#8a54ec, #ae2bf1, #8a54ec);
+  color: white;
+  border: 1px solid #8a54ec;
+  margin-top: 20px;
+}
+
+.projectDetail > div .updateDelete {
+  margin: 20px 0;
+}
+
+.projectDetail .selectWrapper {
+  position: relative;
+  width: 100%;
+}
+
+.projectDetail select {
+  font-size: 18px;
+  background-color: transparent;
+  color: white;
+  border: 1px solid white;
+  padding: 10px 40px 10px 10px;
+  box-sizing: border-box;
+  width: 100%;
+  appearance: none;
+}
+
+.projectDetail .selectWrapper::after {
+  content: '▼';
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 16px;
+  color: white;
+  pointer-events: none;
+  z-index: 1;
+}
+
+.projectDetail .selectWrapper {
+  border: 1px solid white;
+  border-radius: 4px;
+}
+
+.projectDetail>div .updateDelete a{
+  margin-right: 20px;
+}
+
+
+.projectDetail .projectInfos2 article{
+  text-align: left;
+  background-color: black;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+.projectDetail .projectInfos2 article h3{
+  margin-top: 0;
+}
+.projectDetail .projectInfos2 article p{
+  margin: 10px 0;
+}
+
+.projectDetail #pdf {
+  display: block;
+  width: fit-content;
+  text-transform: uppercase;
+  margin: 20px auto;
+}
+
+.form h1 {
+  margin: 0;
+  padding: 30px 0;
+}
+.form .formNav {
+  width: 90%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-bottom: 20px;
+}
+.form .formNav a {
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+.form .formNav a:nth-of-type(odd){
+  margin-right: 10px;
+}
+.form form, .project form, .popup form {
+  display: flex;
+  flex-direction: column;
+  padding: 0 5% 5%;
+}
+.form form {
+  padding-top: 20px;
+}
+.form #openSource label, .form #auditCode label{
+  margin-right: 10px;
+}
+.form label {
+  margin-bottom: 10px;
+}
+.form input, .form textarea, .distribute input {
+  padding: 20px;
+  border-radius: 5px;
+  border: none;
+  margin-bottom: 20px;
+}
+.form textarea {
+  min-height: 75px;
+}
+.form p {
+  margin: 0 0 10px;
+}
+.custom-file-upload {
+  position: relative;
+  display: inline-block;
+}
+
+.custom-file-upload input[type="file"] {
+  display: none;
+}
+
+.custom-file-upload label {
+  display: inline-block;
+  padding: 10px 20px;
+  cursor: pointer;
+  background-color: #8a54ec;
+  color: white;
+  border-radius: 5px;
+  border: 1px solid #8a54ec;
+  transition: background-color 0.3s, border-color 0.3s;
+}
+
+.custom-file-upload label:hover {
+  opacity: 0.9;
+}
+
+#file-input {
+  display: none;
+}
+.form form .valid {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.form form input[type=submit] {
+  text-transform: uppercase;
+  background-color: transparent;
+  border: 1px solid white;
+  color: white;
+  margin: 0;
+  width: 150px;
+}
+
+.form form div .hidden {
+  visibility: hidden;
+}
+
+.form select, .profile select {
+  font-size: 18px;
+  background-color: transparent;
+  color: white;
+  border: 1px solid white;
+  padding: 10px;
+}
+
+.form .active {
+  color: #ae2bf1;
+  border: 1px solid #ae2bf1;
+}
+
+.form #team-members{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.form #team-members input {
+  width: 49%;
+}
+.form #team-members input:nth-of-type(n+3){
+  width: 100%;
+}
+
+.form #partnersInfos input{
+  display: block;
+  margin-top: 10px;
+  width: 100%;
+}
+.form #gitLink, .form #companyLink, .form #minMax input{
+  width: 100%;
+  margin-top: 10px;
+}
+
+.form  #regulations, .form #legalAdvice, .form #community, .form #roadMap, .form #business, .form #launched{
+  margin-bottom: 20px;
+}
+
+.form #channels {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  width: 100%;
+}
+.form #channels label {
+  width: 33%;
+  text-align: center;
+}
+
+
+.form #sendPdf {
+  font-size: 20px;
+  padding: 20px 0;
+}
+.form .createWallet{
+  margin-top: 20px;
+}
+
+.form .createWallet button {
+  margin: 10px 0;
+}
+.distribute form {
+  margin-top: 20px;
+}
+.distribute input {
+  text-transform: uppercase;
+  display: block;
+  width: 100%;
+}
+
+.distribute input[type=submit] {
+  text-transform: uppercase;
+}
+
+.error {
+  color: red;
+  text-align: center;
+  width: 100%;
+}
+.success {
+  color: green;
+  text-align: center;
+  width: 100%;
+}
+.form .validation .error {
+  text-align: left;
+}
+
+.deleteWallet .sure {
+  
+  display: flex;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+
+.deleteWallet .sure p {
+  width: 100%;
+  margin: 10px 0;
+}
+.deleteWallet .sure a {
+  width: 50px;
+  text-align: center;
+  text-transform: uppercase;
+  padding: 10px;
+  font-size: 14px;
+  color: white;
+}
+.deleteWallet .sure a:first-of-type {
+  background-color: green;
+  margin-right: 20px;
+}
+
+.deleteWallet .sure a:last-of-type {
+  background-color: red;
+}
+
+@media screen and (min-width: 768px){
+
+  /* LOGIN */
+  .login form {
+    width: 70%;
+  }
+
+  .home .list {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  .home .list h2 {
+    width: 100%;
+  }
+
+  .home .list .info{
+    width: 49%;
+  }
+
+  .home .list>div {
+    position: relative;
+    width: 48%;
+    margin-bottom: 50px;
+  }
+  /* PROFILE */
+
+  .profile .adminStatus {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  .profile .adminStatus h2 {
+    width: 100%;
+  }
+  .profile .adminCard{
+    margin: 20px 0;
+    width: 48%;
+  }
+  /* PROJECT DETAIL  && TOKEN DETAIL*/
+    .projectDetail>div img {
+      width: 30%;
+    }
+
+    .projectDetail .selectWrapper {
+      margin: 30px auto 0;
+      width: 70%;
+    }
+
+    .projectDetail #pdf {
+      margin: 20px 0;
+    }
+  /* FORM */
+  .form form {
+    padding: 0 10% 5%;
+  }
+
+  .form form .valid {
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  .form form .valid input[type=submit]:last-of-type{
+    margin-left: 20px;
+  }
+  .distribute form {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 100%;
+  }
+  .distribute form input {
+    width: 49%;
+    margin: 0;
+  }
+  .distribute h3, .distribute input[type=submit] {
+    width: 100%;
+  }
+
+}
+
+@media screen and (min-width: 1024px){
+  /* HEADER */
+  header {
+    padding: 15px 30px 10px;
+  }
+  header nav a:first-of-type {
+    margin-right: 20px;
+  }
+  /* LOGIN */
+  .login form {
+    width: 500px;
+  }
+
+  /* HOME */
+  .home .list {
+    gap: 20px;
+    justify-content: center;
+  }
+  .home .list:first-of-type {
+    padding-bottom: 0;
+  }
+  
+  .home .list .info {
+    flex: 1 1 calc(33.333% - 20px);
+    max-width: calc(33.333% - 20px);
+    padding: 20px;
+    font-size: 10px;
+    box-sizing: border-box;
+    margin-bottom: 20px;
+  }
+  
+  .home .list .info:nth-last-child(-n+3) {
+    flex: 1 1 calc(50% - 20px);
+  }
+
+  .home .list h2 {
+    font-size: 16px;
+  }
+  .home .list .info h3 {
+    font-size: 14px;
+  }
+  .home nav {
+    justify-content: center;
+  }
+  .home nav a{
+    margin: 0 20px;
+    width: 15%;
+  }
+  .home nav a:first-of-type, .home nav a:nth-of-type(2) {
+    margin-bottom: 0;
+  }
+
+  /* PROJECT DETAILS && TOKEN DETAILS*/
+  .projectDetail {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding-top: 5vh;
+  }
+  .projectDetail>div {
+    width: 50%;
+    text-align: left;
+}
+  .projectDetail .projectInfos, .projectDetail .projectInfos2{
+    width: 100%;
+  }
+  .projectDetail>div #logoTitle {
+    display: flex;
+    align-items: center;
+  }
+  
+  .projectDetail>div #logoTitle h1{
+    text-align: left;
+    margin-left: 20px
+  }
+  .projectDetail>div h2 {
+    text-align: left;
+  }
+  .projectDetail>div .hashscan {
+    width: 50%;
+  }
+  .projectDetail>div img {
+    width: 10%;
+    margin: 0;
+  }
+  .projectDetail .selectWrapper {
+    margin: 30px 0 0;
+    width: 30%;
+  }
+  .projectDetail .projectInfos2{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+
+  .projectDetail .projectInfos2 article{
+    width: 49%;
+  }
+
+  .projectDetail .projectInfos2 h2{
+    width: 100%;
+  }
+  .projectDetail .walletSpace {
+    width: 100%;
+  }
+  /* FORM */
+.form {
+  min-height: 82vh;
+  overflow: auto;
+  position: relative;
+}
+.form h1 {
+  padding-bottom: 20px;
+}
+.form .formNav {
+  width: 100%;
+}
+.form .formNav a:nth-of-type(odd) {
+  margin: 0;
+}
+.form .formNav a {
+  margin: 0 10px;
+  border-radius: 2px;
+  font-size: 10px;
+  padding: 10px;
+}
+
+.form form {
+  padding: 5px 20% 20px;
+}
+
+.form input, .form textarea, .distribute input {
+  padding: 10px;
+  border-radius: 2px;
+}
+.form select {
+  font-size: 14px;
+}
+
+.form input[type=submit]{
+  padding: 10px 20px;
+}
+
+.form label {
+  font-size: 14px;
+}
+
+.form #channels {
+  justify-content: flex-start;
+}
+.form #channels label {
+  width: 10%;
+}
+.distribute form {
+  justify-content: flex-start;
+  align-items: center;
+}
+.distribute form input {
+  width: 350px;
+  margin-right: 10px;
+  padding: 20px;
+  border: 1px solid white;
+}
+.distribute input[type=submit] {
+  width: fit-content;
+  height: fit-content;
+  margin: 0;
+}
+
+ /* PROFILE */
+ .profile {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  padding-bottom: 5vh;
+  text-align: left;
+}
+.profile .infos {
+  width: 40%;
+}
+.profile .adminList {
+  width: 60%;
+}
+
+
+.profile h1 {
+  width: 100%;
+  text-align: left;
+  margin-left: 0;
+}
+.profile .form {
+  min-width: 0;
+  width: 80%;
+  margin: 0 auto;
+  min-height: fit-content;
+}
+.profile .form input[type=submit] {
+  width: fit-content;
+}
+.profil .adminStatus {
+  width: 70%;
+}
+.profile .udpatePassword form {
+  display: inline-block;
+  padding-bottom: 0;
+}
+.profile .udpatePassword form input[type=text]{
+  border:1px solid white;
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+  width: 70%;
+  margin-bottom: 0;
+}
+
+.profile .udpatePassword form input[type=submit]{
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+  width: 30%;
+}
+.profile .infos .form {
+  margin: 20px 0 0;
+}
+.profile #role {
+  margin-bottom: 30px;
+}
+
+}
+
+@media screen and (min-width: 1800px){
+  .home .list{
+    padding: 5vh 20%;
+  }
+
+  .distribute form input {
+    width: 350px;
+    padding: 10px;
+    border: 1px solid white;
+  }
+  .distribute input[type=submit] {
+    padding: 10px;
+    margin: 0;
+  }
+  .profile {
+    width: 70%;
+  }
+}
+
+
