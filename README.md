@@ -14,6 +14,15 @@ HASHTHRUSTER ADMIN
 2 - Installation: yarn install
 3 - Start: npm run dev
 
+If you want to connect on Admin, you can use my fake account
+
+email: blabla@gmail.com
+password: Azerty1234!
+
+After you can create an admin in the Profile page on valid email address.
+It will send you an email with temporary password and you need to validate status for new admin (if you don't validate you can't access with your new account)
+After that, with you want to change password, you can log in and change password with your new Password.
+
 HASHTHRUSTER FRONTEND
 
 Requirement for transaction => Hashpack Wallet
@@ -24,7 +33,7 @@ Requirement for transaction => Hashpack Wallet
 
 HASHTHRUSTER NLP
 
-ATTENTION to be able to use the model, the weights need to bee unziped (W_Glove_finetune_twitter_small)
+ATTENTION to be able to use the model, the weights need to be unziped (W_Glove_finetune_twitter_small)
 
 To be able to try out AI, you need to have a python environment with conda installed on your machine.
 
